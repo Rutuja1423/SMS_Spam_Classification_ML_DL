@@ -1,92 +1,77 @@
-SMS Spam Classification using ML & Deep Learning
+# SMS Spam Classification using Machine Learning & Deep Learning
 
-📌 Project Overview
+## Project Overview
 
-Classifies SMS messages as Spam or Ham (Not Spam)
+This project focuses on building a text classification model to detect whether an SMS message is Spam or Ham (Not Spam).
 
-Implements both Machine Learning and Deep Learning approaches
+Both Machine Learning and Deep Learning models were implemented and compared to evaluate performance.
 
-Focuses on building a high-performance spam detection system
+---
 
-Designed to achieve strong generalization with minimal overfitting
+## Objectives
 
-🚀 Models Implemented
+- Perform text preprocessing and cleaning
+- Convert text into numerical format using NLP techniques
+- Train classification models
+- Compare ML and DL performance
+- Evaluate model using accuracy and confusion matrix
 
-🔹 Machine Learning Models
+---
 
-Gaussian Naive Bayes
+## Dataset Information
 
-Multinomial Naive Bayes
+- SMS dataset containing labeled messages (Spam / Ham)
+- Text-based classification problem
+- Binary classification task
 
-Decision Tree
+---
 
-Logistic Regression
+## Technologies Used
 
-K-Nearest Neighbors (KNN)
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- TensorFlow / Keras
+- NLP (Tokenization, TF-IDF / Embedding)
 
-Support Vector Classifier (SVC)
+---
 
-Gradient Boosting
+## Machine Learning Models Used
 
-Bagging Classifier
+- Naive Bayes
+- Logistic Regression
+- Support Vector Machine
 
-🔹 Deep Learning Model
+## Deep Learning Model
 
-Bidirectional LSTM (bLSTM)
+- LSTM (Long Short-Term Memory Network)
 
-📊 Final Model Performance (bLSTM)
+---
 
-Test Accuracy: 98.16%
+## Model Performance
 
-Test Loss: 0.0744
+- Achieved accuracy of approximately 98% (mention your exact accuracy)
+- Deep Learning model showed improved generalization
 
-Spam Precision: 91%
+---
 
-Spam Recall: 93%
+## Key Steps Performed
 
-Ham Precision: 99%
+1. Text cleaning (removing stopwords, punctuation)
+2. Tokenization
+3. Vectorization (TF-IDF / Embedding)
+4. Model training
+5. Evaluation using accuracy & confusion matrix
 
-Overall Error Rate: 1.84%
+---
 
-✔ Shows minimal overfitting
+## Conclusion
 
-✔ Demonstrates excellent generalization
+This project demonstrates my understanding of:
 
-✔ Reliable for real-world spam detection
+- Natural Language Processing
+- Machine Learning algorithms
+- Deep Learning architecture (LSTM)
+- Model comparison and evaluation
 
-
-🧠 Deep Learning Architecture
-
-Embedding Layer (64 dimensions)
-
-Bidirectional LSTM (100 units)
-
-Dropout Regularization (0.3)
-
-Dense Layer (ReLU Activation)
-
-Sigmoid Output Layer
-
-Total Trainable Parameters: 742,121
-
-💾 Model Saving
-
-Saved Model File: My_model.h5
-
-Saved Tokenizer: My_model.pkl
-
-🎯 Conclusion
-
-Achieved high classification accuracy
-
-Balanced performance across spam and ham classes
-
-Strong real-world applicability
-
-Demonstrates effective NLP preprocessing + ML/DL comparison
-
-👨‍💻 Contributors
-
-Sanman Kadam
-
-Rutuja Shinde
+It strengthened my ability to build real-world classification models.
