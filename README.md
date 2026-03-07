@@ -21,7 +21,7 @@ Both Machine Learning and Deep Learning models were implemented and compared to 
 ## Dataset Information
 
 - SMS dataset containing labeled messages (Spam / Ham)
-- Text-based classification problem
+- Text based classification problem
 - Binary classification task
 
 ---
@@ -44,7 +44,7 @@ Both Machine Learning and Deep Learning models were implemented and compared to 
 
 ## Deep Learning Model
 
-- LSTM (Long Short-Term Memory Network)
+- LSTM (Long Short Term Memory Network)
 
 ---
 
@@ -74,4 +74,4 @@ This project demonstrates my understanding of:
 - Deep Learning architecture (LSTM)
 - Model comparison and evaluation
 
-It strengthened my ability to build real-world classification models.
+It strengthened my ability to build real world classification models.
