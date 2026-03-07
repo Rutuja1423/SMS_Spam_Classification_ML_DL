@@ -1,77 +1,110 @@
-# SMS Spam Classification using Machine Learning & Deep Learning
+# SMS Spam Classification using Machine Learning and Deep Learning
 
 ## Project Overview
 
-This project focuses on building a text classification model to detect whether an SMS message is Spam or Ham (Not Spam).
+This project focuses on developing a text classification model to automatically detect whether an SMS message is **Spam** or **Ham (Not Spam)**.
 
-Both Machine Learning and Deep Learning models were implemented and compared to evaluate performance.
+Both **Machine Learning algorithms** and a **Deep Learning model** were implemented and compared to evaluate their performance in spam detection.
+
+The project demonstrates how **Natural Language Processing (NLP)** techniques can be applied to transform unstructured text into numerical features for predictive modeling.
 
 ---
 
 ## Objectives
 
-- Perform text preprocessing and cleaning
-- Convert text into numerical format using NLP techniques
-- Train classification models
-- Compare ML and DL performance
-- Evaluate model using accuracy and confusion matrix
+* Perform text preprocessing and cleaning
+* Convert text into numerical format using NLP techniques
+* Train multiple classification models
+* Implement a Deep Learning model
+* Compare the performance of Machine Learning and Deep Learning approaches
 
 ---
 
-## Dataset Information
+## Dataset
 
-- SMS dataset containing labeled messages (Spam / Ham)
-- Text based classification problem
-- Binary classification task
+The dataset contains labeled SMS messages classified into two categories:
 
----
+* **Spam** – Unwanted promotional or fraudulent messages
+* **Ham** – Legitimate SMS messages
 
-## Technologies Used
-
-- Python
-- Pandas & NumPy
-- Scikit-learn
-- TensorFlow / Keras
-- NLP (Tokenization, TF-IDF / Embedding)
+This is a **binary text classification problem** where the goal is to correctly classify each message based on its content.
 
 ---
 
-## Machine Learning Models Used
+## Tools and Technologies
 
-- Naive Bayes
-- Logistic Regression
-- Support Vector Machine
+The following tools and libraries were used in this project:
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* TensorFlow / Keras
+* Natural Language Processing (NLP)
+
+---
+
+## Machine Learning Models
+
+The following Machine Learning algorithms were implemented:
+
+* Naive Bayes
+* Logistic Regression
+* Support Vector Machine (SVM)
+
+These models were trained using **TF-IDF vectorized text features**.
+
+---
 
 ## Deep Learning Model
 
-- LSTM (Long Short Term Memory Network)
+A **Long Short-Term Memory (LSTM)** neural network was implemented to capture sequential patterns and contextual relationships in text data.
 
 ---
 
-## Model Performance
+## Methodology
 
-- Achieved accuracy of approximately 98% (mention your exact accuracy)
-- Deep Learning model showed improved generalization
+The project follows these main steps:
+
+1. **Text Preprocessing**
+
+   * Removing punctuation and stopwords
+   * Converting text to lowercase
+   * Cleaning and normalizing messages
+
+2. **Text Representation**
+
+   * Tokenization
+   * TF-IDF vectorization or word embeddings
+
+3. **Model Training**
+
+   * Training Machine Learning models
+   * Training the LSTM model
+
+4. **Model Evaluation**
+
+   * Accuracy
+   * Confusion Matrix
+   * Model comparison
 
 ---
 
-## Key Steps Performed
+## Results
 
-1. Text cleaning (removing stopwords, punctuation)
-2. Tokenization
-3. Vectorization (TF-IDF / Embedding)
-4. Model training
-5. Evaluation using accuracy & confusion matrix
+The models achieved **high classification accuracy (approximately 98%)**, demonstrating the effectiveness of NLP techniques in spam detection.
+
+The Deep Learning model showed strong ability to capture contextual information from text.
 
 ---
 
 ## Conclusion
 
-This project demonstrates my understanding of:
+This project demonstrates practical skills in:
 
-- Natural Language Processing
-- Machine Learning algorithms
-- Deep Learning architecture (LSTM)
-- Model comparison and evaluation
+* Natural Language Processing (NLP)
+* Machine Learning for text classification
+* Deep Learning using LSTM networks
+* Model evaluation and comparison
 
-It strengthened my ability to build real world classification models.
+It highlights how both Machine Learning and Deep Learning approaches can be applied to solve real-world spam detection problems.
