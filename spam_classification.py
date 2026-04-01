@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend for script mode
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import seaborn as sns
@@ -25,9 +27,12 @@ from tensorflow.keras.layers import Dense, Embedding, LSTM, Dropout, Bidirection
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 
-# %matplotlib inline
 plt.rcParams['figure.figsize'] = (15, 5)
 plt.style.use('ggplot')
+
+# Get the directory where this script is located for resolving relative paths
+import pathlib
+SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
 seed = 42
 
 import warnings
@@ -38,15 +43,15 @@ nltk.download("wordnet")
 nltk.download('punkt')
 nltk.download('punkt_tab')
 
-df = pd.read_csv('/content/spam.csv', encoding='latin1')
-display(df.head())
+df = pd.read_csv(SCRIPT_DIR / 'Data' / 'spam.csv', encoding='latin1')
+print(df.head())
 
 pd.set_option("display.precision", 3)
 pd.options.display.float_format = '{:.3f}'.format
 
 columns_to_drop = [col for col in df.columns if 'Unnamed' in col]
 df = df.drop(columns=columns_to_drop)
-display(df.head())
+print(df.head())
 
 def plot_history(history):
     loss_list = [s for s in history.history.keys() if 'loss' in s and 'val' not in s]
@@ -182,21 +187,21 @@ def word_cloud(tag):
   plt.tight_layout(pad = 1)
   plt.show()
 
-df_spam = pd.read_csv('spam.csv', encoding = 'latin-1')
+df_spam = pd.read_csv(SCRIPT_DIR / 'Data' / 'spam.csv', encoding = 'latin-1')
 
 df_spam = df_spam.filter(['v1', 'v2'], axis = 1)
 df_spam.columns = ['feature', 'message']
 df_spam.drop_duplicates(inplace = True, ignore_index = True)
 print('Number of null values:\n')
-df_spam.isnull().sum()
+print(df_spam.isnull().sum())
 
-df_spam['feature'].value_counts()
+print(df_spam['feature'].value_counts())
 
-df_spam.shape, df_spam.columns
+print(df_spam.shape, df_spam.columns)
 
 plt.figure(figsize = (10, 6))
 counter = df_spam.shape[0]
-ax1 = sns.countplot(df_spam['feature'])
+ax1 = sns.countplot(x='feature', data=df_spam)
 ax2 = ax1.twinx()                      # Make double axis
 ax2.yaxis.tick_left()                 # Switch so the counter's axis is on the right, frequency axis is on the left
 ax1.yaxis.tick_right()
