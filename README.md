@@ -166,7 +166,6 @@ SMS_Spam_Classification_ML_DL/
 1. Clone the repository:
    ```bash
    git clone https://github.com/Rutuja1423/SMS_Spam_Classification_ML_DL.git
-   cd SMS_Spam_Classification_ML_DL
    ```
 
 2. Install dependencies:
